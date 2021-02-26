@@ -14,8 +14,8 @@ import cucumber.api.CucumberOptions;
 
 @RunWith(RunnerPersonalizado.class)
 @CucumberOptions(
-features = "src/test/resources/features/"
-,glue = "choucair.pruebaIngreso.definitions"
+features = "src/test/resources/features/Vuelos.feature"
+,glue = "definitions"
 //,tags = "@CP3040M"
 ,monochrome = true
 ,snippets = SnippetType.CAMELCASE
