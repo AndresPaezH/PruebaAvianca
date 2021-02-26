@@ -77,7 +77,7 @@
 				<version>${failsafe.version}</version>
 				<configuration>
 					<includes>
-						<include>MenuSuperiorRunner.java</include>
+						<include>MainRunner.java</include>
 					</includes>
 				</configuration>
 				<executions>

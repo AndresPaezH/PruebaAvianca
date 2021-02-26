@@ -16,7 +16,7 @@ import cucumber.api.CucumberOptions;
 @CucumberOptions(
 features = "src/test/resources/features/Vuelos.feature"
 ,glue = "definitions"
-//,tags = "@CP3040M"
+,tags = "@tag1"
 ,monochrome = true
 ,snippets = SnippetType.CAMELCASE
 )

@@ -87,7 +87,8 @@ public class SeleccionVueloPageObject extends PageObject {
 		ModelInfoVuelo.setValorVuelo(valorTotal.replace("$", "").replace(".", "").split(" ")[0]);
 	}
 	
-	public void clickEnBotonContinuarSeleccionVuelo() {
+	public void validoYDoyClickEnBotonContinuarSeleccionVuelo() {
+		assertTrue(waitFor(element(btnContinuar)).isEnabled());
 		utilidades.darClickEnElemento(btnContinuar);
 	}
 	

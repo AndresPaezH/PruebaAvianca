@@ -20,7 +20,7 @@ public class SeleccionVueloSteps {
 		seleccionVueloPageObject.obtenerDatosDelVueloIda();
 		seleccionVueloPageObject.obtenerYValidarCantidadPasajeros();
 		seleccionVueloPageObject.obtenerValorTotalDelVuelo();
-		seleccionVueloPageObject.clickEnBotonContinuarSeleccionVuelo();
+		seleccionVueloPageObject.validoYDoyClickEnBotonContinuarSeleccionVuelo(); // si se activa este boton es porque permitio seleccionar el segundo vuelo
 		utilidades.visualizaDialogo(null, ModelInfoVuelo.getDetalleVueloIda() + "\nHora salida: "
 				+ ModelInfoVuelo.getHoraSalidaVuelo() + "\nHora llegada: "
 				+ ModelInfoVuelo.getHoraLlegadaVuelo()+ "\nFecha: "+ModelInfoVuelo.getFechaVueloIda(),
@@ -35,11 +35,11 @@ public class SeleccionVueloSteps {
 	@Step
 	public void capturoInformacionDelVueloRegreso() {
 		seleccionVueloPageObject.obtenerDatosDelVueloRegreso();
-		seleccionVueloPageObject.clickEnBotonContinuarSeleccionVuelo();
+		seleccionVueloPageObject.validoYDoyClickEnBotonContinuarSeleccionVuelo();
 		utilidades.visualizaDialogo(null, ModelInfoVuelo.getDetalleVueloRegreso() + "\nHora salida: "
 				+ ModelInfoVuelo.getHoraSalidaVueloVuelta() + "\nHora llegada: "
 				+ ModelInfoVuelo.getHoraLlegadaVueloVuelta()+ "\nFecha: "+ModelInfoVuelo.getFechaVueloVuelta(),
 		"Informacion del Vuelo regreso", 5000);
-		seleccionVueloPageObject.waitFor(30).seconds();
+		seleccionVueloPageObject.waitFor(10).seconds();
 	}
 }
