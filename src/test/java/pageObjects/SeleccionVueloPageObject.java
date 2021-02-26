@@ -88,7 +88,7 @@ public class SeleccionVueloPageObject extends PageObject {
 	}
 	
 	public void validoYDoyClickEnBotonContinuarSeleccionVuelo() {
-		assertTrue(waitFor(element(btnContinuar)).isEnabled());
+		assertTrue(utilidades.esperarElementoHabilitado(btnContinuar));
 		utilidades.darClickEnElemento(btnContinuar);
 	}
 	

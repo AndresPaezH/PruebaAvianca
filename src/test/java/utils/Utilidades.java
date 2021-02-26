@@ -65,6 +65,16 @@ public class Utilidades extends PageObject {
 	}
 	
 	/**
+	 * Metodo diseñado para esperar a que un elemento este habilitado
+	 * @param elementoAEsperar elemento al cual se va a esperar a que este habilitado
+	 * @return 
+	 */
+	public boolean esperarElementoHabilitado(By elementoAEsperar) {
+		WebElementFacade elemento = element(elementoAEsperar);
+		return waitFor(elemento).isEnabled();
+	}
+	
+	/**
 	 * Metodo diseñado para llevar el cursor a un elemento 
 	 * @param elementoDestino elemento al que se quiere llevar el cursor
 	 */
