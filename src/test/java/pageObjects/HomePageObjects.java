@@ -2,14 +2,11 @@ package pageObjects;
 
 import java.time.temporal.ChronoUnit;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
-import net.thucydides.core.steps.WaitForBuilder;
 import utils.Utilidades;
 
 @DefaultUrl("https://www.avianca.com/")
