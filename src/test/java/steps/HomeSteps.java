@@ -26,10 +26,10 @@ public class HomeSteps {
 	}
 	
 	@Step
-	public void seleccionarCantidadPasajeros( String cantidadAdultos, String cantidadNiños, String cantidadBebes) {
+	public void seleccionarCantidadPasajeros( String cantidadAdultos, String cantidadNinos, String cantidadBebes) {
 		objectHomePageObjects.seleccionarPasajeros();
 		objectHomePageObjects.seleccionarCantidadAdultos(Integer.parseInt(cantidadAdultos));
-		objectHomePageObjects.seleccionarCantidadNiños(Integer.parseInt(cantidadNiños));
+		objectHomePageObjects.seleccionarCantidadNinos(Integer.parseInt(cantidadNinos));
 		objectHomePageObjects.seleccionarCantidadBebes(Integer.parseInt(cantidadBebes));
 		objectHomePageObjects.clickEnContinuarSeleccionPasajeros();
 		objectHomePageObjects.clickEnBuscarVuelos();

@@ -31,7 +31,7 @@ public class HomePageObjects extends PageObject {
 	private String xpathDiaMesSiguiente = "((//div[@class='name-month']/following::div[@class='number-days'])[2]//div[@class='intern-day'])[*]";
 	private By txtPasajerosYClase = By.xpath("(//*[text()='Pasajeros y clase']/following::input[1])[1]");
 	private By btnAddAdultos = By.xpath("((//div[text()='Adultos'])[1]//following::i[contains(text(),'add')])[1]");
-	private By btnAddNiños = By.xpath("((//div[text()='Niños'])[1]//following::i[contains(text(),'add')])[1]");
+	private By btnAddNinos = By.xpath("((//div[text()='Niños'])[1]//following::i[contains(text(),'add')])[1]");
 	private By btnAddBebes = By.xpath("((//div[text()='Bebés'])[1]//following::i[contains(text(),'add')])[1]");
 	private By btnContinuarPasajeros = By.xpath("(//button[@class=\"btn btn-secondary secondary close-me\"])[1]");
 	private By btnBuscarVuelos = By.xpath("(//button[@class=\"btn primary btn-codepromo pull-btn\"])[1]");
@@ -91,9 +91,9 @@ public class HomePageObjects extends PageObject {
 			utilidades.darClickEnElemento(btnAddAdultos);
 	}
 	
-	public void seleccionarCantidadNiños(int cantidad) {
+	public void seleccionarCantidadNinos(int cantidad) {
 		for (int i = 0; i < cantidad; i++) 
-			utilidades.darClickEnElemento(btnAddNiños);	
+			utilidades.darClickEnElemento(btnAddNinos);	
 	}
 	
 	public void seleccionarCantidadBebes(int cantidad) {
